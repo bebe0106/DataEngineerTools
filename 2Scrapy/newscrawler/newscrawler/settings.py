@@ -15,6 +15,12 @@ SPIDER_MODULES = ['newscrawler.spiders']
 NEWSPIDER_MODULE = 'newscrawler.spiders'
 
 
+ITEM_PIPELINES = {
+    'newscrawler.pipelines.TextPipeline': 300,
+    'newscrawler.pipelines.MongoPipeline': 300
+
+}
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'newscrawler (+http://www.yourdomain.com)'
 
